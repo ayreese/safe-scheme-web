@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Home() {
     return (
-        <div className="font-sans bg-primary text-gray-900 min-h-screen">
+        <div className="font-sans bg-white text-gray-900 min-h-screen">
             {/* Navigation Bar */}
             <header className="bg-white text-white py-4">
                 <div className="container mx-auto flex justify-between items-center px-6">
@@ -13,20 +13,20 @@ export default function Home() {
                     </div>
                     <nav className="space-x-6">
                         <Link href="#about" className="hover:underline font-semibold text-dark">
-                            About
+                            Features
                         </Link>
                         <Link href="#social-proof" className=" font-semibold text-dark">
                             Testimonials
                         </Link>
                         <Link
                             href="/login"
-                            className="py-2 px-4 rounded-full font-semibold text-dark"
+                            className="py-2 px-4 rounded-full font-extrabold text-dark"
                         >
                             Login
                         </Link>
                         <Link
                             href="/signup"
-                            className="py-2 px-8 rounded-full bg-primary font-semibold capitalize"
+                            className="py-4 px-8 bg-primary rounded-full text-white font-semibold hover:bg-primaryLight transition capitalize"
                         >
                             Start for free
                         </Link>
@@ -35,45 +35,40 @@ export default function Home() {
             </header>
 
             {/* Hero Section */}
-            <section className="relative bg-cover bg-center h-screen" style={{backgroundImage: 'url("/hero-bg.jpg")'}}>
-                <div className="absolute inset-0 bg-black opacity-50"></div>
-                <div className="container mx-auto text-center text-white relative z-10 py-20">
-                    <h2 className="text-xxl sm:text-5xl font-bold leading-tight mb-4">
-                        Manage Your Tasks the Safe Way with Safe Scheme
-                    </h2>
-                    <p className="text-base sm:text-xl mb-8">
-                        The task manager built for productivity, privacy, and simplicity. Secure your workflow with Safe
-                        Scheme today!
-                    </p>
-                    <Link
-                        href="/signup"
-                        className="inline-block bg-primary text-white py-1.5 px-8 rounded-full text-lg font-semibold hover:bg-green-600 transition"
-                    >
-                        Get Started
-                    </Link>
-                </div>
-            </section>
-
-            {/* About Section */}
-            <section id="about" className="py-16 bg-white text-gray-900">
-                <div className="container mx-auto text-center px-6">
-                    <h2 className="text-3xl font-semibold mb-6">About Safe Scheme</h2>
-                    <p className="text-lg sm:text-xl mb-8">
+            <section className="bg-cover h-screen flex flex-auto py-32 px-36 gap-x-32">
+                {/* Left side - Text content */}
+                <div className="basis-1/2 w-full content-center">
+                    <h1 className="text-heading font-semibold text-dark mb-4 leading-heading-xl tracking-tighter">Say hello to <span>Safe Scheme</span>  </h1>
+                    <p className="text-body text-dark mb-8">
                         Safe Scheme is an intuitive task manager designed to help you organize your personal and
                         professional tasks.
                         It’s optimized for performance, built on AWS for scalability, and designed with security in
                         mind.
                     </p>
-                    <p className="text-lg sm:text-xl mb-8">
+                    <p className="text-body text-dark mb-8">
                         Whether you’re working on individual projects or collaborating with teams, Safe Scheme provides
                         a seamless experience to stay organized.
                     </p>
                     <Link
-                        href="/features"
-                        className="inline-block bg-blue-600 text-white py-3 px-6 rounded-full text-lg font-semibold hover:bg-blue-700 transition"
+                        href="/signup"
+                        className="inline-block py-4 px-8 bg-primary rounded-full text-white font-semibold hover:bg-primaryLight transition"
                     >
-                        Learn More
+                        Get Started for Free
                     </Link>
+                </div>
+
+                {/* Right side - Image with background color */}
+                <div className="w-full h-auto relative basis-2/3 drop-shadow-md">
+                    <div className="image-container">
+                        <Image
+                            src="/hero.png"
+                            alt="Hero Background"
+                            fill={true}
+                            className="hero-image"
+                            style={{objectFit: "contain"}}
+                        />
+                    </div>
+
                 </div>
             </section>
 
