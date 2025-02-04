@@ -33,27 +33,27 @@ const NavigationBar = () => {
             {/*Navigation Bar Nav Links*/}
             <nav
                 id="navigationContainer"
-                className={`w-screen lg:flex lg:flex-row lg:justify-between lg:top-auto lg:left-auto lg:right-auto lg:relative lg:bg-none max-w-full flex flex-col justify-between z-50 bg-white items-center absolute top-full left-0 right-0 gap-y-8 py-10 ${isOpen ? 'block' : 'hidden'}`}
+                className={`w-screen lg:flex lg:flex-row lg:justify-end gap-x-16 lg:top-auto lg:left-auto lg:right-auto lg:relative lg:bg-none max-w-full flex flex-col justify-between z-50 bg-white items-center absolute top-full left-0 right-0 gap-y-8 py-10 ${isOpen ? 'block' : 'hidden'}`}
             >
 
-                {/*<Link href="#Features" className="font-semibold text-dark">*/}
-                {/*    Features*/}
-                {/*</Link>*/}
-                {/*<Link href="#Testimonials" className="font-semibold text-dark">*/}
-                {/*    Testimonials*/}
-                {/*</Link>*/}
-                {/*<Link*/}
-                {/*    href="/login"*/}
-                {/*    className="font-extrabold text-dark"*/}
-                {/*>*/}
-                {/*    Login*/}
-                {/*</Link>*/}
-                {/*<Link*/}
-                {/*    href="/signup"*/}
-                {/*    className="py-4 px-8 bg-primary rounded-full text-white font-semibold hover:bg-primaryLight transition capitalize"*/}
-                {/*>*/}
-                {/*    Start for free*/}
-                {/*</Link>*/}
+                <Link href="/#Features" className="font-semibold text-dark">
+                    Features
+                </Link>
+                <Link href="/#Testimonies" className="font-semibold text-dark">
+                    Testimonials
+                </Link>
+                <Link
+                    href="/login"
+                    className="font-extrabold text-dark"
+                >
+                    Login
+                </Link>
+                <Link
+                    href="/signup"
+                    className="py-4 px-8 bg-primary rounded-full text-white whitespace-nowrap font-semibold hover:bg-primaryLight transition capitalize"
+                >
+                    Start for free
+                </Link>
             </nav>
         </header>
     )
