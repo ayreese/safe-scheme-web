@@ -1,114 +1,80 @@
+'use client';
 import Image from "next/image";
-import Link from "next/link";
+// import Link from "next/link";
+import NavigationBar from "@/components/NavigationBar";
+import Footer from "@/components/Footer";
+import {useEffect, useState} from "react";
+import FeatureSection from "@/components/FeatureSection";
+import TestimonialSection from "@/components/TestimonialSection";
+import PreFooter from "@/components/PreFooter";
+import LogoCarousel from "@/components/LogoCarousel";
 
 export default function Home() {
+    const [windowSize, setWindowSize] = useState(0);
+    useEffect(() => {
+        const handleResize = () => {
+            setWindowSize(window.innerWidth > 768 ? 1 : 0);
+        };
+        handleResize();
+        window.addEventListener('resize', handleResize);
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
     return (
-        <div className="font-sans bg-white text-gray-900 min-h-screen">
-            {/* Navigation Bar */}
-            <header className="bg-white text-white py-4">
-                <div className="container mx-auto flex justify-between items-center px-6">
-                    <div className="flex items-center gap-4">
-                        <Image src="/logo.png" alt="Safe Scheme Logo" width={40} height={40}/>
-                        <h1 className="text-xl font-semibold text-dark">Safe Scheme</h1>
+        <div className={"bg-white overflow-hidden flex flex-col"}>
+            <NavigationBar/>
+            <main className={"snap-y snap-mandatory"}>
+                <section
+                    id={"Hero"}
+                    className="box-border snap-center grid grid-cols-auto gap-y-8 lg:grid-cols-2 lg:gap-y-2 lg:gap-x-8 lg:px-20 lg:py-10 py-12 px-8 bg-white items-center lg:justify-items-start justify-items-center">
+                    {/*Heading*/}
+                    <h1 className="z-0 font-semibold text-dark tracking-tighter text-center col-start-1 row-start-1 xl:text-desktop lg:text-tablet lg:text-start text-xl capitalize lg:row-start-2 lg:leading-heading-xs">
+                        Say hello to <span className="whitespace-nowrap">Safe Scheme</span>
+                    </h1>
+                    {/*Product description*/}
+                    <div className="description-hero lg:row-start-3 w-full max-w-3xl">
+                        <p className="text-center lg:text-left text-body text-dark w-full mb-4">
+                            Safe Scheme is an intuitive task manager designed to help you organize your personal and
+                            professional tasks.
+                            It’s optimized for performance, built on AWS for scalability, and designed with security
+                            in mind.
+                        </p>
+                        <p className="text-center lg:text-left text-body text-dark">
+                            Whether you’re working on individual projects or collaborating with teams, Safe Scheme
+                            provides
+                            a seamless experience to stay organized.
+                        </p>
                     </div>
-                    <nav className="space-x-6">
-                        <Link href="#about" className="hover:underline font-semibold text-dark">
-                            Features
-                        </Link>
-                        <Link href="#social-proof" className=" font-semibold text-dark">
-                            Testimonials
-                        </Link>
-                        <Link
-                            href="/login"
-                            className="py-2 px-4 rounded-full font-extrabold text-dark"
-                        >
-                            Login
-                        </Link>
-                        <Link
-                            href="/signup"
-                            className="py-4 px-8 bg-primary rounded-full text-white font-semibold hover:bg-primaryLight transition capitalize"
-                        >
-                            Start for free
-                        </Link>
-                    </nav>
-                </div>
-            </header>
-
-            {/* Hero Section */}
-            <section className="bg-cover h-screen flex flex-auto py-32 px-36 gap-x-32">
-                {/* Left side - Text content */}
-                <div className="basis-1/2 w-full content-center">
-                    <h1 className="text-heading font-semibold text-dark mb-4 leading-heading-xl tracking-tighter">Say hello to <span>Safe Scheme</span>  </h1>
-                    <p className="text-body text-dark mb-8">
-                        Safe Scheme is an intuitive task manager designed to help you organize your personal and
-                        professional tasks.
-                        It’s optimized for performance, built on AWS for scalability, and designed with security in
-                        mind.
-                    </p>
-                    <p className="text-body text-dark mb-8">
-                        Whether you’re working on individual projects or collaborating with teams, Safe Scheme provides
-                        a seamless experience to stay organized.
-                    </p>
-                    <Link
-                        href="/signup"
-                        className="inline-block py-4 px-8 bg-primary rounded-full text-white font-semibold hover:bg-primaryLight transition"
-                    >
-                        Get Started for Free
-                    </Link>
-                </div>
-
-                {/* Right side - Image with background color */}
-                <div className="w-full h-auto relative basis-2/3 drop-shadow-md">
-                    <div className="image-container">
+                    {/*Create account button*/}
+                    <div className="col-start-1 lg:row-start-4">
+                        {/*<Link*/}
+                        {/*    href="/signup"*/}
+                        {/*    className="inline-block py-4 px-8 bg-primary rounded-full text-white font-semibold hover:bg-primaryLight transition"*/}
+                        {/*>*/}
+                        {/*    Get Started for Free*/}
+                        {/*</Link>*/}
+                    </div>
+                    {/*Hero image*/}
+                    <div
+                        className="image-container lg:col-start-2 lg:row-start-1 lg:row-span-5 row-start-2 drop-shadow-fi">
                         <Image
-                            src="/hero.png"
+                            src={windowSize === 1 ? "/hero.png" : "/hero-mobile.png"}
                             alt="Hero Background"
-                            fill={true}
+                            width={720}
+                            height={400}
                             className="hero-image"
-                            style={{objectFit: "contain"}}
+                            style={{objectFit: "contain", width: "100%", height: "auto"}}
+                            sizes="(max-width: 768px) 100vw, 50vw"
                         />
                     </div>
-
-                </div>
-            </section>
-
-            {/* Social Proof Section */}
-            <section id="social-proof" className="py-16 bg-gray-100">
-                <div className="container mx-auto text-center px-6">
-                    <h2 className="text-3xl font-semibold mb-6">What Our Users Are Saying</h2>
-                    <div className="flex justify-center gap-12 mb-8">
-                        <div className="max-w-xs">
-                            <p className="text-lg italic mb-4">“Safe Scheme has transformed the way I manage my
-                                day-to-day tasks. It&#39;s incredibly intuitive and keeps me organized.”</p>
-                            <p className="font-semibold">Sarah L.</p>
-                            <p className="text-sm text-gray-500">Designer</p>
-                        </div>
-                        <div className="max-w-xs">
-                            <p className="text-lg italic mb-4">“The security features are a game changer. I can finally
-                                trust that my tasks are kept private and safe.”</p>
-                            <p className="font-semibold">John D.</p>
-                            <p className="text-sm text-gray-500">Engineer</p>
-                        </div>
-                    </div>
-                    <Link
-                        href="/testimonials"
-                        className="inline-block text-blue-600 hover:underline"
-                    >
-                        Read More Testimonials
-                    </Link>
-                </div>
-            </section>
-
-            {/* Footer */}
-            <footer className="py-8 bg-blue-600 text-white">
-                <div className="container mx-auto text-center px-6">
-                    <div className="flex justify-center gap-8 mb-6">
-                        <Link href="/privacy-policy" className="hover:underline">Privacy Policy</Link>
-                        <Link href="/terms-of-service" className="hover:underline">Terms of Service</Link>
-                    </div>
-                    <p>&copy; {new Date().getFullYear()} Safe Scheme. All rights reserved.</p>
-                </div>
-            </footer>
+                </section>
+                <LogoCarousel/>
+                <FeatureSection/>
+                <TestimonialSection/>
+                <PreFooter/>
+            </main>
+            <Footer/>
         </div>
     );
 }

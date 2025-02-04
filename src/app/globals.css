@@ -19,3 +19,18 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: transparent;
+  padding: 8px 16px;
+  color: #7a4fff !important;
+}
+.swiper-pagination-bullet {
+  width: .75rem !important;
+  height: .75rem !important;
+  background-color: #7a4fff !important;
+}
+.swiper-pagination-bullet-active {
+  background-color: #5200cc;
+}
