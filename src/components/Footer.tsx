@@ -18,7 +18,6 @@ const Footer = () => {
                             Trust us to protect what matters most.
                         </p>
                         <div className="flex gap-4">
-                            Social Media Icons
                             <Link href="https://www.twitter.com" className="text-white hover:text-primary transition">
                                 <FontAwesomeIcon icon={faTwitter} size="lg"/>
                             </Link>
