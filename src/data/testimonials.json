@@ -1,0 +1,32 @@
+{
+  "testimonials": [
+    {
+      "name": "Jane Smith",
+      "role": "CEO, Company Xeon",
+      "testimonial":
+      "Since using Safe Scheme, our team has become significantly more organized. We can track tasks, communicate seamlessly, and meet deadlines like never before. It has truly transformed the way we work!",
+      "image": "/customer_1.jpg"
+    },
+    {
+      "name": "Ben Lee",
+      "role": "Marketing Director, Brand New",
+      "testimonial":
+      "Safe Scheme has revolutionized our workflow. From managing campaigns to collaborating across departments, everything is more efficient. It has made project tracking effortless, and we're hitting all our milestones with ease.",
+      "image": "/customer_2.jpg"
+    },
+    {
+      "name": "Michel Johnson",
+      "role": "Founder, Startup Z-Gen",
+      "testimonial":
+      "Managing projects used to feel chaotic. With Safe Scheme, our team is aligned and every task is tracked. The intuitive interface and real-time updates make it the perfect tool for a growing startup.",
+      "image": "/customer_3.jpg"
+    },
+    {
+      "name": "Jones Malone",
+      "role": "Operations Manager, Global Enterprises",
+      "testimonial":
+      "The Safe Scheme platform has helped us streamline project management across departments, ensuring we're all on the same page. It scales with our needs, making project oversight effortless even as we grow.",
+      "image": "/customer_4.jpg"
+    }
+  ]
+}

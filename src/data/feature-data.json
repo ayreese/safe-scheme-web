@@ -1,0 +1,40 @@
+{
+  "features": [
+    {
+      "title": "Manage Projects with Ease",
+      "description": "Create, Edit, and Delete Projects at Your Fingertips",
+      "copy": "Effortlessly organize your tasks by managing your projects directly from the API. Whether starting a new project, updating an existing one, or cleaning up, all it takes is a few simple calls. You’re in control—your ideas, your projects, your way.",
+      "image": "/board.png",
+      "isBeta": false
+    },
+    {
+      "title": "Streamlined Task Management",
+      "description": "Focus on What Matters: Tasks & Subtasks",
+      "copy": "Break down projects into actionable tasks. Add, edit, or remove tasks with ease—no task too small to track. Organize your tasks by project, and tackle your to-dos with clarity and confidence. With subtasks, you can break down any task into manageable pieces, making complex goals feel more achievable.",
+      "image": "/view-task.png",
+      "isBeta": false
+    },
+
+    {
+      "title": "Instant Task Capture and Organization",
+      "description": "Fast and Seamless Task Creation",
+      "copy": "Capture tasks in seconds. Whether you're creating a task for a new project or adding a subtask to an existing one, our API lets you quickly organize everything you need with minimal effort. It's the quickest way to get tasks into the system and get started on what’s important right away.",
+      "image": "/add-task.png",
+      "isBeta": false
+    },
+    {
+      "title": "Track Progress and Stay On Top",
+      "description": "See Your Projects, Tasks, and Subtasks Clearly",
+      "copy": "From overview to detail, you can view and track your projects and tasks easily. Keep tabs on your project status with a clear, simple interface, and track progress at every level—whether it's at the project level, task level, or even subtask level. No more wondering where you stand.",
+      "image": "/hero.png",
+      "isBeta": false
+    },
+    {
+      "title": "Fully Integrated, Hassle-Free API",
+      "description": "Complete API for Task Management",
+      "copy": "Manage your projects, tasks, and subtasks via a single, easy-to-integrate API. Whether you’re building a custom application or integrating with an existing workflow, this API enables seamless interaction between your app and task management system. It’s the perfect solution for developers looking to streamline task management workflows.",
+      "image": "/spec.png",
+      "isBeta": true
+    }
+  ]
+}
