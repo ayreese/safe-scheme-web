@@ -8,7 +8,7 @@ import 'swiper/css/bundle';
 const TestimonialSection = ()=> {
     const testimonials:Testimonial[] = data.testimonials;
     return (
-        <section id="Testimonials" className="testimonial-carousel relative mx-auto py-36 bg-white">
+        <section id="Testimonies" className="testimonial-carousel relative mx-auto py-36 bg-white">
             {/* Heading */}
             <div className="Testimonial-Heading flex lg:pl-8 justify-center mb-16">
                 <h2 className="font-black lg:text-xxl text-xl text-center capitalize text-dark flex flex-col leading-tight">

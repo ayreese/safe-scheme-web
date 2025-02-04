@@ -6,7 +6,7 @@ import {FC, JSX} from "react";
 
 const FeatureSection: FC = (): JSX.Element => {
     return (
-        <section
+        <section id={"Features"}
             className="feature-section bg-white snap-start w-screen box-content flex flex-col justify-center">
             <h1 className="section-heading text-dark text-center font-black mb-4 lg:mb-8 flex flex-col text-xl lg:text-xxl capitalize">
                 <span className={"text-primary"}> Effortless Project </span> & Task Management
