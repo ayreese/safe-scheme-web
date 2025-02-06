@@ -1,8 +1,5 @@
 'use client';
 import Image from "next/image";
-// import Link from "next/link";
-import NavigationBar from "@/components/NavigationBar";
-import Footer from "@/components/Footer";
 import {useEffect, useState} from "react";
 import FeatureSection from "@/components/FeatureSection";
 import TestimonialSection from "@/components/TestimonialSection";
@@ -23,7 +20,7 @@ export default function Home() {
     }, []);
     return (
         <div className={"bg-white overflow-hidden flex flex-col"}>
-            <NavigationBar/>
+            {/*<NavigationBar/>*/}
             <main className={"snap-y snap-mandatory"}>
                 <section
                     id={"Hero"}
@@ -74,7 +71,7 @@ export default function Home() {
                 <TestimonialSection/>
                 <PreFooter/>
             </main>
-            <Footer/>
+            {/*<Footer/>*/}
         </div>
     );
 }

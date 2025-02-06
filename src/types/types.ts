@@ -12,3 +12,13 @@ export interface Testimonial {
     testimonial: string,
     image: string,
 }
+
+export interface LoginValues  {
+    email: string
+    password: string
+}
+
+export interface SignUpValues extends LoginValues {
+    firstName: string
+    lastName: string
+}

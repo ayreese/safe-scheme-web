@@ -1,5 +1,5 @@
 'use client'
-// import Link from 'next/link'
+import Link from 'next/link'
 
 const PreFooter = () => {
     return (
@@ -12,12 +12,12 @@ const PreFooter = () => {
                     Join hundreds of others saving time and getting things done
                 </p>
                 <div className="col-start-1 lg:row-start-4">
-                    {/*<Link*/}
-                    {/*    href="/signup"*/}
-                    {/*    className="inline-block py-4 px-8 bg-neutralLight rounded-full capitalize text-white font-semibold hover:bg-primaryLight transition"*/}
-                    {/*>*/}
-                    {/*    Get Started for Free*/}
-                    {/*</Link>*/}
+                    <Link
+                        href="/signup"
+                        className="inline-block py-4 px-8 bg-neutralLight rounded-full capitalize text-white font-semibold hover:bg-primaryLight transition"
+                    >
+                        Get Started for Free
+                    </Link>
                 </div>
             </div>
         </div>
