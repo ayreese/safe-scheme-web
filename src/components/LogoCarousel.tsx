@@ -14,13 +14,13 @@ const images: string[] = [
 
 const LogoCarousel: FC = (): JSX.Element => {
     return (
-        <section className="my-32 flex flex-col justify-center">
+        <section className="my-48 flex flex-col justify-center">
             <h1 className={"capitalize text-center text-xxl font-black text-dark mb-4"}><span
                 className={"text-primary"}>Trusted</span> By</h1>
-            <div className={"bg-lightGrey h-56 flex items-center"}>
-                <Swiper {...logoSwiperConfig}>
+            <div className={"box-border"}>
+                <Swiper {...logoSwiperConfig} className={"bg-lightGrey"}>
                     {images.map((image: string, index: number) => (
-                        <SwiperSlide key={index}>
+                        <SwiperSlide key={index} className={"py-16"}>
                             <div className="relative w-full h-24 drop-shadow-md">
                                 <Image
                                     src={image}

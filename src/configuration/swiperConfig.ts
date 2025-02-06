@@ -6,7 +6,6 @@ export const testimonialSwiperConfig: SwiperOptions = {
     modules: [Navigation, Pagination, A11y, EffectCoverflow, Keyboard],
     spaceBetween: 100,
     slidesPerView: 1,
-    autoHeight: true,
     loop: true,
     // effect: "coverflow",
     keyboard: {
@@ -24,7 +23,7 @@ export const testimonialSwiperConfig: SwiperOptions = {
 export const logoSwiperConfig: SwiperOptions = {
     modules: [Navigation, Pagination, A11y, Autoplay, EffectFade],
     spaceBetween: 10,
-    autoHeight: true,
+    height: 380,
     slidesPerView: 1,
     loop: true,
     effect: "slide",
