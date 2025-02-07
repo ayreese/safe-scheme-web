@@ -14,7 +14,7 @@ const images: string[] = [
 
 const LogoCarousel: FC = (): JSX.Element => {
     return (
-        <section className="my-48 flex flex-col justify-center">
+        <section className="flex flex-col justify-center | mb-48">
             <h1 className={"capitalize text-center text-xxl font-black text-dark mb-4"}><span
                 className={"text-primary"}>Trusted</span> By</h1>
             <div className={"box-border"}>

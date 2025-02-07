@@ -33,7 +33,7 @@ const NavigationBar = () => {
             {/*Navigation Bar Nav Links*/}
             <nav
                 id="navigationContainer"
-                className={`w-screen lg:flex lg:flex-row lg:justify-end gap-x-16 lg:top-auto lg:left-auto lg:right-auto lg:relative lg:bg-none max-w-full flex flex-col justify-between z-50 bg-white items-center absolute top-full left-0 right-0 gap-y-8 ${isOpen ? 'block' : 'hidden'}`}
+                className={`flex flex-col justify-between items-center gap-y-8 lg:flex lg:flex-row lg:justify-end gap-x-16 | absolute top-full left-0 right-0 lg:top-auto lg:left-auto lg:right-auto lg:relative | lg:bg-none max-w-full z-50 bg-white w-screen pb-8  ${isOpen ? 'block' : 'hidden'}`}
             >
 
                 <Link href="/#Features" className="font-semibold text-dark">
