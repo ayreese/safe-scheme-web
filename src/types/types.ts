@@ -22,3 +22,7 @@ export interface SignUpValues extends LoginValues {
     firstName: string
     lastName: string
 }
+
+export interface ConfirmationCode {
+    code: string
+}

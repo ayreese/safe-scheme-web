@@ -1,4 +1,5 @@
-import AuthForm from "@/components/AuthForm";
+"use client"
+import AuthForm from "@/components/auth/AuthForm";
 import {FC, JSX} from "react";
 
 const LoginPage:FC = ():JSX.Element => {

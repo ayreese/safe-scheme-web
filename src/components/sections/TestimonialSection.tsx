@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import data from "../data/testimonials.json";
+import data from "../../data/testimonials.json";
 import {Testimonial} from "@/types/types";
 import {Swiper, SwiperSlide} from 'swiper/react';
 import {testimonialSwiperConfig} from "@/configuration/swiperConfig";

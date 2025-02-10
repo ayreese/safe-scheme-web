@@ -1,5 +1,5 @@
 import Image from "next/image";
-import data from "../data/feature-data.json"
+import data from "../../data/feature-data.json"
 import {Feature} from "@/types/types";
 import {FC, JSX} from "react";
 

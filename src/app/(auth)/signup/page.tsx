@@ -1,7 +1,9 @@
-import AuthForm from "@/components/AuthForm";
+"use client"
+import AuthForm from "@/components/auth/AuthForm";
+import React, {FC, JSX} from "react";
 
-const SignUpPage = () => {
-    return <AuthForm login={false}/>
+const SignUpPage:FC = ():JSX.Element => {
+    return <AuthForm login={false} />
 
 };
 

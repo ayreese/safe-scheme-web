@@ -34,8 +34,8 @@ const Footer = () => {
                     <div className="flex flex-col items-center md:items-start">
                         <h3 className="text-lg font-semibold text-primary mb-4">Quick Links</h3>
                         <ul className="space-y-4 text-neutralLight">
-                            <li><Link href="/#Features" className="hover:text-primary transition">Features</Link></li>
-                            <li><Link href="/#Testimonies" className="hover:text-primary transition">Testimonials</Link>
+                            <li><Link href="/public#Features" className="hover:text-primary transition">Features</Link></li>
+                            <li><Link href="/public#Testimonies" className="hover:text-primary transition">Testimonials</Link>
                             </li>
                             {/*<li><Link href="/pricing" className="hover:text-primary transition">Pricing</Link></li>*/}
                             {/*<li><Link href="/about" className="hover:text-primary transition">About Us</Link></li>*/}

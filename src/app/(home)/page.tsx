@@ -1,9 +1,9 @@
 'use client';
-import FeatureSection from "@/components/FeatureSection";
-import TestimonialSection from "@/components/TestimonialSection";
-import PreFooter from "@/components/PreFooter";
-import LogoCarousel from "@/components/LogoCarousel";
-import HeroSection from "@/components/HeroSection";
+import FeatureSection from "@/components/sections/FeatureSection";
+import TestimonialSection from "@/components/sections/TestimonialSection";
+import PreFooter from "@/components/sections/PreFooter";
+import LogoCarousel from "@/components/sections/LogoCarousel";
+import HeroSection from "@/components/sections/HeroSection";
 
 export default function Home() {
 

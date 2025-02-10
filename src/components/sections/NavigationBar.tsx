@@ -12,7 +12,7 @@ const NavigationBar = () => {
                 className="flex justify-between items-center relative bg-white text-white display w-screen py-16 lg:px-20 px-8">
             {/*Logo and home button*/}
             <div id={"logoContainer"} className="flex items-center gap-4 justify-items-end w-screen">
-                <Link href="/" className=" font-semibold text-dark">
+                <Link href="/public" className=" font-semibold text-dark">
                     <div className="flex items-center gap-4 ">
                         <Image src="/logo.png" alt="Safe Scheme Logo" width={40} height={40}
                                style={{objectFit: "contain", width: "100", height: "auto"}}/>
@@ -36,10 +36,10 @@ const NavigationBar = () => {
                 className={`flex flex-col justify-between items-center gap-y-8 lg:flex lg:flex-row lg:justify-end gap-x-16 | absolute top-full left-0 right-0 lg:top-auto lg:left-auto lg:right-auto lg:relative | lg:bg-none max-w-full z-50 bg-white w-screen pb-8  ${isOpen ? 'block' : 'hidden'}`}
             >
 
-                <Link href="/#Features" className="font-semibold text-dark">
+                <Link href="/public#Features" className="font-semibold text-dark">
                     Features
                 </Link>
-                <Link href="/#Testimonies" className="font-semibold text-dark">
+                <Link href="/public#Testimonies" className="font-semibold text-dark">
                     Testimonials
                 </Link>
                 <Link
